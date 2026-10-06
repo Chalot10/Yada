@@ -1,0 +1,36 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes progressBar {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.progress-bar {
+    @apply absolute top-0 left-0 h-1 bg-blue-500;
+    width: 100%;
+    animation: progressBar 2s linear infinite;
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes progressBar {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.progress-bar {
+    width: 100%;
+    animation: progressBar 2s linear infinite;
+}

@@ -1,0 +1,41 @@
+
+@keyframes progressBar {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(0%); }
+    100% { transform: translateX(100%); }
+}
+
+#loading-overlay {
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+#loading-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+/* Custom 840px breakpoint for responsive behavior */
+@media (min-width: 840px) {
+    #desktop-nav {
+        display: flex !important;
+    }
+    #mobile-drawer-toggle {
+        display: none !important;
+    }
+    #sidebar {
+        display: block !important;
+    }
+    #mobile-drawer-overlay {
+        display: none !important;
+    }
+}
+@media (max-width: 839px) {
+    #desktop-nav {
+        display: none !important;
+    }
+    #mobile-drawer-toggle {
+        display: block !important;
+    }
+    #sidebar {
+        display: none !important;
+    }
+}
